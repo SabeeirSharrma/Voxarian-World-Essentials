@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "voxarian-world-essentials",
+  "version": "1.0.0",
+  "name": "Voxarian World Essentials",
+  "description": "Essential resources for the Voxarian World modpack.",
+  "authors": ["Sabeeir Sharrma"],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/voxarian-world-essentials",
+    "issues": "https://github.com/SabeeirSharrma/Voxarian-World-Essentials",
+    "Discord": "https://discord.gg/CN5datVbF4"
+  },
+  "license": "GNU AGPL v3",
+  "icon": "assets/voxarian-world-essentials/icon.png",
+
+  "environment": "client",
+
+  "entrypoints": {
+    "client": [
+      "com.sabcodes.voxarianworldessentials.VoxarianWorldEssentialsClient"
+    ]
+  },
+
+  "mixins": [
+    "voxarian-world-essentials.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "minecraft": "1.20.1",
+    "fabric": "*"
+  }
+}
