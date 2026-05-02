@@ -18,17 +18,11 @@ public abstract class TitleScreenMixin {
     private SplashTextRenderer splashText;
 
     @Inject(
-        method = "render(Lnet/minecraft/client/gui/DrawContext;IIF)V",
-        at = @At("HEAD"),
+        method = "init()V",
+        at = @At("TAIL"),
         require = 0
     )
-    private void voxarian$removeSplash(
-            net.minecraft.client.gui.DrawContext context,
-            int mouseX,
-            int mouseY,
-            float delta,
-            CallbackInfo ci
-    ) {
+    private void voxarian$removeSplash(CallbackInfo ci) {
         this.splashText = null;
     }
 }

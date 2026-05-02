@@ -4,8 +4,10 @@
   "package": "com.sabcodes.voxarianworldessentials.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [],
+  "refmap": "client-voxarian-world-essentials-refmap.json",
   "client":[
-    "TitleScreenMixin"
+    "TitleScreenMixin",
+    "ResourcePackManagerMixin"
   ],
   "server": [],
   "injectors": {
